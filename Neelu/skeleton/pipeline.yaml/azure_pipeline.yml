@@ -1,0 +1,82 @@
+---
+pool: default
+
+trigger:
+  - main
+
+stages:
+  - stage: build_mac
+    displayName: "my build_mac" 
+    jobs:
+      - job: myjob
+        displayName: myjob
+        steps:
+          - task: echo "one"
+          - task: echo "two"
+          - task: echo "three"
+          - task: echo "four"
+          - task: echo "five"
+  - stage: build_linux
+    displayName: "my build_linux" 
+    jobs:
+      - job: myjob
+        displayName: myjob
+        steps:
+          - task: echo "one"
+          - task: echo "two"
+          - task: echo "three"
+          - task: echo "four"
+          - task: echo "five"
+  - stage: build_win
+    displayName: "my build_win" 
+    jobs:
+      - job: myjob
+        displayName: myjob
+        steps:
+          - task: echo "one"
+          - task: echo "two"
+          - task: echo "three"
+          - task: echo "four"
+          - task: echo "five"
+  - stage: build_unix
+    displayName: "my build_unix" 
+    jobs:
+      - job: myjob
+        displayName: myjob
+        steps:
+          - task: echo "one"
+          - task: echo "two"
+          - task: echo "three"
+          - task: echo "four"
+          - task: echo "five"
+
+
+
+---
+pool: default
+
+trigger:
+  - main
+
+jobs:
+  - job: myjob
+    displayName: myjob
+    steps:
+      - script: echo "one"
+      - script: echo "two"
+      - script: echo "three"
+      - script: echo "four"
+      - script: echo "five" 
+
+
+
+        
+
+
+        
+
+
+
+
+
+ 
